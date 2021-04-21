@@ -16,6 +16,11 @@
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
+#ifdef __FreeBSD__
+#define __BSD_VISIBLE 1
+#include <sys/wait.h>
+#endif
+
 #include <algorithm>
 #include <array>
 #include <cstdlib>
